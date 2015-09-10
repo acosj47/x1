@@ -19,9 +19,9 @@ void setup() {
 //// NEXT FRAME:  scene, action, show.
 void draw() {
   //// SCENE:  sky, sun, tree, house, etc.
-  background( 100,150,200 );                // sky
+  background( 100,200,250 );                // sky
   fill( 255,255,0 );
-  ellipse( width*3/4, height/8, 40,40 );    // sun
+  ellipse( width*3/4, horizon/2, 40,40 );    // sun
   // Grass
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
@@ -32,7 +32,7 @@ void draw() {
                                             // house
 
   fill(0);
-  text( "My name is Mud", 10,height-20 );                                          
+  text( "My name is Justin", 10,height-20 );                                          
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
@@ -42,7 +42,12 @@ void draw() {
 
   /* INSERT YOUR CODE HERE! */
   fill(255,0,0); rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
-  text( "Fred", x,y );
+  fill(0,0,250);
+  ellipse(x+15,y-10, 20, 20);
+  ellipse(x+15,y-10, 20, 20);
+
+  fill(0);
+  text( "Igor", x+3,y+20 );
 
 }
 
